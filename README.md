@@ -1,4 +1,4 @@
-#Parallel Mate Project
+
 
 ## Overview
 This is a web application that allows users to upload an image, provide personal details, and engage in interactive chat functionality. The project leverages modern web technologies for an engaging user experience, including:
