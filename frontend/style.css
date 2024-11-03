@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-color: #576ead88;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+#output {
+    border: 2px solid transparent;
+    margin-top: 20px;
+}
+
+.header-content {
+    width: 90vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.insert {
+    height: auto;
+    width: 70%;
+
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.chatbot {
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+}
+
+.insert h1 {
+    color: rgb(14, 92, 126);
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    text-shadow: 2px 2px 0px #aaa, 4px 4px 0px #777, 6px 6px 0px #444;
+}
+
+.upload-section input,
+.upload-section button {
+    border: 2px solid rgb(7, 51, 70);
+    border-radius: 20px;
+    box-shadow: rgb(7, 51, 70) 2px 2px;
+    background-color: rgb(14, 92, 126);
+    /* Blue background */
+    color: #fff;
+    /* White text color */
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+.select input:hover,.select button:hover{
+    background-color: rgb(6, 45, 60);
+    border: 2px solid rgb(5, 35, 48)
+}
+
+.select input {
+    padding: 10px;
+}
+
+.select button {
+    padding: 15px;
+}
+
+
+.image-box {
+    max-width: 300px;
+    max-height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-box img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+
+/* Form container styling */
+.form-container {
+    background-image:url(../images/bg_form.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: -25%;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 500px;
+    padding: 20px;
+    
+    background-color: rgb(14, 92, 126);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+.form-container form{
+    justify-self: center;
+    margin: 10px;
+    width: 80%;
+    
+}
+
+/* Form heading */
+.form-container h2 {
+    width: 90%;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #0aa3a3;
+    text-align: center;
+}
+
+/* Label styling */
+.form-container label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+    color: #423030;
+}
+
+/* Input and textarea styling */
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="email"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Button styling */
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(10, 62, 84);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: rgb(9, 71, 97);
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    gap: 300px;
+}
+.chat-section h1,.upload-section h1{
+    width: 90%;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #0aa3a3;
+    text-align: center;
+    text-shadow: 2px 2px 0px #aaa, 4px 4px 0px #777, 6px 6px 0px #444;
+
+}
+.second{
+    width: 30vw;
+}
+.second .chat-section{
+    margin-top: 20px;
+    width: 100%;
+}
+.chat-section button,.chat-section input{
+    font-size: 1rem;
+    border: 2px solid rgb(7, 51, 70);
+    border-radius: 20px;
+    box-shadow: rgb(7, 51, 70) 2px 2px;
+    background-color: rgb(14, 92, 126);
+    /* Blue background */
+    color: white;
+    /* White text color */
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+.chat-section ::placeholder{
+    color: white;
+}

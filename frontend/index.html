@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallel Mate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="upload-section">
+            <h1>Upload an Image</h1>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="imageInput" name="image" accept="image/*" required />
+                <button type="button" class="upbutton">Upload Image</button>
+            </form>
+            <div id="output"></div>
+        </div>
+    <div class="second">
+        <div class="form-container">
+            <h2>Enter Your Details</h2>
+            <form id="userForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required placeholder="Describe yourself..."></textarea>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="chat-section">
+            <h1>Chat with Me</h1>
+            <input type="text" id="messageInput" placeholder="Type your message" required />
+            <input type="text" id="identityInput" placeholder="Enter traits" required />
+            <button id="chatButton">Send Message</button>
+            <div id="chatOutput"></div>
+        </div>
+    </div>
+    </div>
+    
+
+
+    <!-- Image display container -->
+    <div id="output" class="image-box"></div>
+
+    <script src="script.js"></script>  
+</body>
+</html>
